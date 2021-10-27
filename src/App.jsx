@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Figure from "./sketch"
+import Figure from "./components/sketch"
 
 const App = () => {
 

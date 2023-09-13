@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <>
             <h1 className="text-blue-400 text-center text-4xl mt-10">
-                Evil Snowperson
+                SF Math Circle
             </h1>
         </>
     )

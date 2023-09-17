@@ -1,30 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Figure from "./components/Sketch";
-import Header from "./components/Header";
+import Game from "./components/Game/Game";
+import Header from "./components/Header/Header";
+import './index.scss'; 
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 const App = () => {
-  const [correctLetters, setCorrectLetters] = useState([]);
-  //const [wrongLetters, setWrongLetters] = useState([])
-
   return (
-    <Router>
-      <div>
+    <div className="body-container">
+      <div className="header">
         <Header />
-        <div>
-          <Routes>
-            <Route
-              path="/play"
-              element={
-                  <Figure />
-              }
-            ></Route>
-          </Routes>
-        </div>
       </div>
-    </Router>
+      <div className="game">
+        <Game />
+      </div>
+    </div>
   );
 };
 

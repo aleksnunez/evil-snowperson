@@ -1,13 +1,13 @@
 import React from "react";
 import Sketch from "react-p5";
-
+import './Game.scss'
 
 	let buttonsx = 350;
 	let buttonsy = 240;
 
 	let bodyx = 350;
 
-const Figure = () => {
+const Game = () => {
 	const setup = (p5, canvasParentRef) => {
 		let canvas = p5.createCanvas(700, 600).parent(canvasParentRef);
 
@@ -15,7 +15,7 @@ const Figure = () => {
 	};
 
 	const draw = (p5) => {
-		p5.background(120);
+		p5.background(2, 7, 168);
 		p5.noStroke()
         
 		//snowman
@@ -37,7 +37,11 @@ const Figure = () => {
 	};
 
 
-	return <Sketch setup={setup} draw={draw} />;
+	// Inside your GameSketch component or equivalent
+return (
+	  <Sketch setup={setup} draw={draw} />
+  );
+  
 };
 
-export default Figure;
+export default Game;
